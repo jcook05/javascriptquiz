@@ -1,5 +1,5 @@
 # javascriptquiz
-json driven javascript quiz.   Ideal for a standalone website on AWS S3
+json driven javascript quiz.   Ideal for a standalone website on AWS S3.    This quiz is certainly a work in progress, there is definitely room for improvement.    At some point I will update to allow for multiple answers.    However, as it stands now this quiz is good for setting up study guides.   Coupled with AWS S3 you can have a study guide to help you or your kids study in a matter of minutes.  
 
 
 To run via AWS S3 Static Hosting
@@ -13,6 +13,8 @@ To run via AWS S3 Static Hosting
 
 4.  Site accessible by your router IP address range only:    Upload the contents of this repository and ensure all objects are set to readable by owner only.   Set bucket policy to restrict access to only your router range of IP addresses.  See policy below for an example. 
 
+
+5.  Setup CICD and you will have your changes uploaded rapidly.   Touch base with me if you want to discuss. 
 
 
 
