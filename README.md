@@ -21,7 +21,7 @@ To run via AWS S3 Static Hosting
 
 
 
-Python functions:
+<b>Python functions:</b>
 
 
 Put a public object:
@@ -72,10 +72,10 @@ Put a private object
         
         
         
-Bucket Policy
+<b>Bucket Policy</b>
 
 
-
+<code>
 {
     "Version": "2012-10-17",
     "Id": "S3PolicyId1",
@@ -94,3 +94,4 @@ Bucket Policy
         }
     ]
 }
+</code>
