@@ -1,0 +1,179 @@
+{
+    "questions": 
+    [
+        {   "topic": "Vikings",
+            "question": "The area of Europe where the Vikings came from is called?",
+
+            "a": "Mesopotamia",
+            "b": "Valhalla",
+            "c": "The Tundra",
+            "d": "Scandinavia",
+            "correct": "Scandinavia"
+        },
+        {
+            "topic": "Vikings", 
+            "question": "What were Vikings also called?",
+            "a": "Norsemen",
+            "b": "Sheep",
+            "c": "Pilgrims",
+            "d": "Monks",
+            "correct": "Norsemen"
+        },
+        {
+            "topic": "Vikings",
+            "question": "Vikings could be described as?",
+            "a": "Astronauts",
+            "b": "Deep sea fishermen",
+            "c": "Bean farmers",
+            "d": "Raiders",
+            "correct": "Raiders"
+        },
+        {
+            "topic": "Vikings",
+            "question": "What abilities are Vikings best known for?",
+            "a": "Writing",
+            "b": "Ship Building and Sailing",
+            "c": "Reading",
+            "d": "Mathematics",
+            "correct": "Ship Building and Sailing"
+        },
+        {
+            "topic": "Vikings",
+            "question": "What would craftworkers carve into wood to be placed on ships?",
+            "a": "Dragon Heads",
+            "b": "Tools",
+            "c": "Armor",
+            "d": "Banners",
+            "correct": "Dragon Heads"
+        },
+        {
+            "topic": "Vikings",
+            "question": "What would vikings call it when they went raiding?",
+            "a": "Pleasant",
+            "b": "Good times",
+            "c": "To go a stealing",
+            "d": "To go a viking",
+            "correct": "To go a viking"
+        },
+        {
+            "topic": "Vikings",
+            "question": "What were the fiercest Viking warriors called?",
+            "a": "Ragers",
+            "b": "Celts",
+            "c": "Navy Seals",
+            "d": "Beserkers",
+            "correct": "Beserkers"
+        },
+        {
+            "topic": "Vikings",
+            "question": "Why was farmland scarse in the Viking homelands?",
+            "a": "Too many people",
+            "b": "Wolves owned the countryside",
+            "c": "Many mountains",
+            "d": "High winds",
+            "correct": "Many mountains"
+        },
+        {
+            "topic": "Vikings",
+            "question": "Where were Viking farms located?",
+            "a": "Underground using candles as light sources",
+            "b": "On floating platforms in the ocean",
+            "c": "In dedicated rooms of their homes",
+            "d": "In between fjords and mountains",
+            "correct": "In between fjords and mountains"
+        },
+        {
+            "topic": "Vikings",
+            "question": "What were the Viking alphabet letters called?",
+            "a": "Stick figures",
+            "b": "Runes",
+            "c": "Symbols",
+            "d": "Ode to Thunder",
+            "correct": "Runes"
+        },
+        
+        {
+
+            "topic": "Vikings",
+            "question": "How did many Europeans feel about Vikings?",
+            "a": "They wanted to adopt the Viking culture",
+            "b": "They feared Vikings",
+            "c": "They loved Vikings",
+            "d": "They welcomed Vikings into their homes",
+            "correct": "They feared Vikings"
+        },
+
+{
+    "a": "Digital maps",
+     "c": "GPS", 
+     "b": "A compass",
+     "d": "The sun and the stars", 
+     "question": "The Vikings navigated by using what?", 
+      "topic": "Vikings",
+      "correct":"The sun and the stars"},
+
+
+{"a": "Sweden",
+ "c": "Greenland",
+"b": "Constantinople", 
+"d": "Mexico",
+"question": "After being banished from Iceland, Eric the Red went to?",
+ "topic": "Vikings",
+ "correct": "Greenland"},
+
+{"a": "To teach to talk", 
+"c": "To hunt rats",
+"b": "To help them if they got lost",
+"d": "As loyal companions",
+"question": "Why did Vikings take birds to sea?", 
+"topic": "Vikings",
+"correct":"To help them if they got lost" },
+
+
+{"a": "Philosopher",
+ "c": "Emperor",
+ "b": "Scientist", 
+ "d": "Explorer",
+  "question": "Leif Ericson is famous for being a?", 
+  "topic": "Vikings",
+  "correct":"Explorer"},
+
+{"a": "To attract settlers",
+ "c": "It matched the environment found in Greenland",
+ "b": "It was selected randomly",
+ "d": "Eric the Red's daughter liked the name", 
+ "question": "Why was Greenland given its name?", 
+ "topic": "Vikings",
+ "correct": "To attract settlers"},
+
+
+{"a": "From the Big Bang", 
+"c": "By the trees",
+ "b": "By the goddess of love", 
+ "d": "From ice, mist and snow", 
+ "question": "How was the world created according to Norse Mythology?",
+ "topic": "Vikings",
+ "correct": "From ice, mist and snow"},
+
+{"a": "Play tiddly winks",
+ "c": "Listen to harp music",
+ "b": "Sit in hot tubs", 
+ "d": "Battle by day and feast at night", 
+ "question": "What do Odin and the warriors do in Valhalla?",
+  "topic": "Vikings",
+  "correct":  "Battle by day and feast at night" },
+
+
+{"a": "Thursday", 
+"c": "Friday",
+"b": "Monday",
+"d": "Tuesday", 
+"question": "What weekday is named after Thor, the Viking god of Thunder?", 
+"topic": "Vikings",
+"correct":"Thursday"}
+
+
+
+
+    ]
+}
