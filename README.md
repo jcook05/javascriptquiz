@@ -29,7 +29,8 @@ To run via AWS S3 Static Hosting
 Put a public object:
 
  """Method to put an object with a public read ACL."""
-    def put_pub_object(self, filepath, filename, bucket):
+   
+     def put_pub_object(self, filepath, filename, bucket):
 
         s3 = boto3.resource('s3')
 
@@ -52,7 +53,9 @@ Put a public object:
         
 Put a private object
 
+
 """Method to put an object with a public read ACL."""
+ 
     def put_private_object(self, filepath, filename, bucket):
 
         s3 = boto3.resource('s3')
@@ -71,7 +74,7 @@ Put a private object
             print("Failed to access artefact in this directory.\n" + str(err))
             return False   
         return True
-        
+ </code>       
         
         
 <b>Bucket Policy</b>
