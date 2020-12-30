@@ -3,7 +3,6 @@
     [
         {   "topic": "Vikings",
             "question": "The area of Europe where the Vikings came from is called?",
-
             "a": "Mesopotamia",
             "b": "Valhalla",
             "c": "The Tundra",
@@ -93,7 +92,6 @@
         },
         
         {
-
             "topic": "Vikings",
             "question": "How did many Europeans feel about Vikings?",
             "a": "They wanted to adopt the Viking culture",
@@ -112,7 +110,6 @@
       "topic": "Vikings",
       "correct":"The sun and the stars"},
 
-
 {"a": "Sweden",
  "c": "Greenland",
 "b": "Constantinople", 
@@ -128,7 +125,6 @@
 "question": "Why did Vikings take birds to sea?", 
 "topic": "Vikings",
 "correct":"To help them if they got lost" },
-
 
 {"a": "Philosopher",
  "c": "Emperor",
@@ -146,7 +142,6 @@
  "topic": "Vikings",
  "correct": "To attract settlers"},
 
-
 {"a": "From the Big Bang", 
 "c": "By the trees",
  "b": "By the goddess of love", 
@@ -163,7 +158,6 @@
   "topic": "Vikings",
   "correct":  "Battle by day and feast at night" },
 
-
 {"a": "Thursday", 
 "c": "Friday",
 "b": "Monday",
@@ -171,9 +165,6 @@
 "question": "What weekday is named after Thor, the Viking god of Thunder?", 
 "topic": "Vikings",
 "correct":"Thursday"}
-
-
-
 
     ]
 }

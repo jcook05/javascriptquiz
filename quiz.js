@@ -1,15 +1,9 @@
-
-
-
 function Quiz(questions, callback) {
     console.log("in quiz")
     console.log(questions.length)
     this.score = 0;
     this.questions = questions;
     this.currentQuestionIndex = 0;
-
-    
-    
 }
 
 Quiz.prototype.guess = function(answer) {
@@ -27,20 +21,12 @@ Quiz.prototype.hasEnded = function() {
     return this.currentQuestionIndex >= this.questions.length;
 };
 
-
-
-function QuizUI(currentquiz) {
-    
+function QuizUI(currentquiz) { 
     console.log("In Quiz");
-    
-    
-    this.quiz = currentquiz;
-
-    
+    this.quiz = currentquiz;  
 }
 
 QuizUI.prototype.displayNext = function () {
-
         console.log("in displayNext");
         console.log(this.quiz);
        if (this.quiz.hasEnded()) {
@@ -65,7 +51,6 @@ QuizUI.prototype.displayQuestion =  function() {
 
 QuizUI.prototype.displayChoices = function() {
         var choices = this.quiz.getCurrentQuestion().choices;
-
         for(var i = 0; i < choices.length; i++) {
             this.populateIdWithHTML("choice" + i, choices[i]);
             this.guessHandler("guess" + i, choices[i]);
@@ -75,15 +60,11 @@ QuizUI.prototype.displayChoices = function() {
 QuizUI.prototype.displayScore = function() {
         var gameOverHTML = "<h1>Game Over</h1>";
         gameOverHTML += "<h2> Your score is: " + this.quiz.score + "</h2>";
-
         gameOverHTML += "<button id=\"return\" class=\"btn--default\" >Try Again?</button>"
         this.populateIdWithHTML("quiz", gameOverHTML);
-
         var button = document.getElementById("return");
         button.onclick = function() {
-
-            window.location.href = '/index.html';
-            
+            window.location.href = '/index.html';    
         }
     }
 
@@ -93,7 +74,6 @@ QuizUI.prototype.populateIdWithHTML = function(id, text) {
     }
 
 QuizUI.prototype.guessHandler = function(id, guess) {
-
         console.log(this.quiz)
         var button = document.getElementById(id);
         button.onclick = function() {
@@ -107,13 +87,6 @@ QuizUI.prototype.displayProgress = function() {
         this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + this.quiz.questions.length);
     }
 
-
-
-    
-
-
-
-
 function Question(topic, text, choices, answer) {
     this.topic = topic;
     this.text = text;
@@ -122,15 +95,11 @@ function Question(topic, text, choices, answer) {
 }
 
 Question.prototype.isCorrectAnswer = function (choice) {
-
-    if(this.answer != choice) {
-        
+    if(this.answer != choice) {   
         alert('Sorry, incorrect.' + '\n' + 'The correct answer is: ' + this.answer )
-
     }
     return this.answer === choice;
 };
-
 
 var allQuestions = new Array()
 var newquestions = new Array()
@@ -138,28 +107,21 @@ var questions = new Array()
 var jsonPromise;
 var topic;
 var quizui;
-
 var quiz;
 
-
-function LoadQuestions(topic) { jsonPromise = $.getJSON('questions.json',function(data){
-                
+function LoadQuestions(topic) { jsonPromise = $.getJSON('questions.json',function(data){             
         console.log(data)
         allQuestions = data.questions   
-        
         console.log(allQuestions[0].question)
         console.log(allQuestions[0].a)
         console.log(allQuestions[0].correct)
-   
         allQuestions.forEach(function(element) {
         console.log(element);
         if(topic != "all"){
-
         if(element.topic == topic){
         questions.push(new Question(element.topic, element.question, [ element.a, element.b, element.c, element.d ], element.correct))
         }       
-        }else {
-        
+        }else {      
         questions.push(new Question(element.topic, element.question, [ element.a, element.b, element.c, element.d ], element.correct))
         }
 });
@@ -174,7 +136,6 @@ jsonPromise.done(function(data) {
 
         console.log(element);
     });
-
     quiz = new Quiz(questions);
     console.log(quiz)
     topic = "all";
@@ -189,67 +150,33 @@ jsonPromise.fail(function(reason) {
     // it failed... handle it
 });
 
-// other stuff ....
-
 jsonPromise.then(function(data) {
     // do moar stuff with data
-    // will perhaps fire instantly, since the deferred may already be resolved.
-    
-
-   
-
-
-
-    
-
-    
-    
+    // will perhaps fire instantly, since the deferred may already be resolved.  
 });
-
-
 }
 
-
 function StartPage() {
-
 $('#start').click(function () {
-    Start();
-    
+    Start();  
     });
-
     $('#vikings').click(function () {
-    Topic("Vikings");
-    
+    Topic("Vikings");  
     });    
-
-
-
 }
 
 function Start() {
- 
- 
- window.location.href = '/quiz.html?topic=all';
-
- 
+ window.location.href = '/quiz.html?topic=all'; 
 }
 
 function Topic(topic) {
-
 window.location.href = '/quiz.html?topic=' + topic;
-
 }
 
-
 function DisplayQuiz(){
-
 var topic = getUrlParameter('topic');
-
 console.log(topic)
-
 LoadQuestions(topic);
-
-
 }
 
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -257,54 +184,35 @@ var getUrlParameter = function getUrlParameter(sParam) {
         sURLVariables = sPageURL.split('&'),
         sParameterName,
         i;
-
     for (i = 0; i < sURLVariables.length; i++) {
         sParameterName = sURLVariables[i].split('=');
-
         if (sParameterName[0] === sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
         }
     }
 };
 
-
-
 function NewQuiz(currentquestions, callback) {
-
     var newquiz;
-
     newquiz = new Quiz(currentquestions);
-
     console.log(newquiz);
-
     NewQuizUI(newquiz);
-
-
     callback(newquiz);
-
-
 }
 
 function QuestionUpdate(topic, callback)  {
-
-    console.log("In question update")
-
+   console.log("In question update")
    // update questions
    var newquestions = new Array();
    questions.forEach(function(element) {
         console.log(element);
         questions.push(new Question(element.question, [ element.a, element.b, element.c, element.d ], element.correct))
         if(element.topic == topic) {
-
             newquestions.push(element)
-
-        }
-        
+        }    
 });
-
    console.log(newquestions.length)
    callback(newquestions)
-
 }
 
 
